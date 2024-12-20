@@ -16,7 +16,6 @@ with open("input.txt", 'r') as file:
 # Calculate the similariry score
 for num in left:
     occur = right.count(num)
-    print(occur)
     similarity += num * occur
 
 print(similarity)
