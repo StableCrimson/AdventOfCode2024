@@ -10,7 +10,7 @@ with open("input.txt", 'r') as file:
 x_size = len(grid[0])
 y_size = len(grid)
 
-# Check if the next spot we want to check is going to be witihn the bounds of the grid
+# Check if the next spot we want to check is going to be within the bounds of the grid
 def next_step_in_bounds(x, y, x_step, y_step) -> bool:
 
   next_x = x + x_step
