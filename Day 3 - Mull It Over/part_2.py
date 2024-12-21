@@ -15,8 +15,8 @@ with open('input.txt', 'r') as file:
     uncorrupted_hits.append(m.group())
   
 # Now we found the uncorrupted data!
-# But there's a catch, we need to filter out the 'enabled'
-# Multiplication instructions first!
+# But there's a catch, we need to filter the 'enabled'
+# multiplication instructions first!
 
 # By default, multiplication is enabled
 enabled = True
@@ -32,7 +32,7 @@ for hit in uncorrupted_hits:
     continue
 
   if enabled:
-    
+
     # Let's say we start with 'mul(123,456)'
     hit = hit.removeprefix('mul(') # Remove the beginning: '123,456)'
     hit = hit.removesuffix(')') # Remove the end: '123,456'
